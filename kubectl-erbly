@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+erb "$@" | kubectl apply -f -
